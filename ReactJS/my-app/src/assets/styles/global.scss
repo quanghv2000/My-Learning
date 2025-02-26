@@ -1,0 +1,17 @@
+@import "normalize.css";
+
+$primary-color: #3498db;
+
+:root {
+    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  background-color: $primary-color;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+}
