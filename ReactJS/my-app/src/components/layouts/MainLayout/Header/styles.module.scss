@@ -1,0 +1,19 @@
+.header {
+  width: 100%;
+  height: var(--header-height);
+  box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
+}
+
+.header_content {
+  display: flex;
+  margin: 0 auto;
+  padding: 8px;
+  height: 100%;
+  max-width: var(--container-width);
+}
+
+.header_content .logo {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
