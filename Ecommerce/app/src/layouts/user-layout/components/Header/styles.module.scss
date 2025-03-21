@@ -1,0 +1,91 @@
+%flexItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: #eee;
+  padding: 30px 0;
+}
+
+.header__content {
+  @extend %flexItemsCenter;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.logo {
+  @extend %flexItemsCenter;
+  gap: 14px;
+
+  &__title {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 145.455%;
+  }
+}
+
+.navbar {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 146.667%;
+  }
+}
+
+.actions {
+  @extend %flexItemsCenter;
+  gap: 20px;
+
+  &__group {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    min-width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+
+  &__group:nth-child(2) {
+    padding: 0 12px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+
+  &__separate {
+    width: 1px;
+    height: 24px;
+    background: #ededf6;
+  }
+
+  &__user &__avatar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+  }
+}
