@@ -4,7 +4,7 @@
 }
 
 .header {
-  background: #eee;
+  background: var(--header-bg-color);
   padding: 30px 0;
 }
 
@@ -51,10 +51,11 @@
   &__group {
     display: flex;
     align-items: center;
-    background: #fff;
+    background: var(--header-actions-group-bg-color);
     min-width: 50px;
     height: 50px;
     border-radius: 8px;
+    box-shadow: 0px 20px 60px 10px var(--header-actions-group-shadow);
   }
 
   &__group:nth-child(2) {
@@ -79,7 +80,7 @@
   &__separate {
     width: 1px;
     height: 24px;
-    background: #ededf6;
+    background: var(--header-actions-group-separate-bg-color);
   }
 
   &__user &__avatar {
