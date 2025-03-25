@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import moreIcon from "assets/icons/more.svg";
 import logoIcon from "assets/icons/logo.svg";
 import arrowDownIcon from "assets/icons/arrow-down.svg";
 import searchIcon from "assets/icons/search.svg";
@@ -9,13 +10,39 @@ import avatar from "assets/imgs/avatar.jpg";
 import styles from "./styles.module.scss";
 
 export default function Header() {
+  // useEffect(() => {
+  //   const f = async () => {
+  //     const promise = new Promise((resolve) => {
+  //       setTimeout(() => {
+  //         resolve("456");
+  //       }, 3000);
+  //     });
+
+  //     console.log("123");
+
+  //     setTimeout(() => {
+  //       console.log("789");
+  //     }, 3000);
+
+  //     const result = await promise;
+
+  //     console.log("result: ", result);
+  //   };
+
+  //   f();
+  // }, []);
+
   return (
     <div className={styles.header}>
       <div className={styles.header__content}>
+        {/* More Icon */}
+        <div className={`${styles.more_icon} icon`}>
+          <img src={moreIcon} alt="" />
+        </div>
         {/* Logo */}
         <div className={styles.logo}>
           <img src={logoIcon} alt="" className={styles.logo__img} />
-          <h1 className={styles.logo__title}>Logo</h1>
+          <h1 className={styles.logo__title}>App Logo</h1>
         </div>
 
         {/* Navbar */}
