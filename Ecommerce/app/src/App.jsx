@@ -1,9 +1,9 @@
-import UserLayout from "./layouts/user-layout";
+import { Header } from "layouts";
 
 function App() {
   return (
     <>
-      <UserLayout />
+      <Header />
     </>
   );
 }

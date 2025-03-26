@@ -1,19 +1,4 @@
-%flexItemsCenter {
-  display: flex;
-  align-items: center;
-}
-
-@mixin screen($device) {
-  @if $device == tablet {
-    @media (max-width: 991.98px) {
-      @content;
-    }
-  } @else if $device == mobile {
-    @media (max-width: 767.98px) {
-      @content;
-    }
-  }
-}
+@use "scss/abstracts" as *;
 
 .header {
   background: var(--header-bg-color);
@@ -26,7 +11,7 @@
 }
 
 .header__content {
-  @extend %flexItemsCenter;
+  @include flexItemsCenter;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1140px;
@@ -43,7 +28,7 @@
 }
 
 .logo {
-  @extend %flexItemsCenter;
+  @include flexItemsCenter;
   gap: 14px;
 
   &__title {
@@ -89,7 +74,7 @@
 }
 
 .actions {
-  @extend %flexItemsCenter;
+  @include flexItemsCenter;
   gap: 20px;
 
   &__group {
