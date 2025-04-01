@@ -1,9 +1,12 @@
-import { Header } from "layouts";
+import { HomePage } from "pages";
+import AppLayout from "./layouts";
 
 function App() {
   return (
     <>
-      <Header />
+      <AppLayout>
+        <HomePage />
+      </AppLayout>
     </>
   );
 }

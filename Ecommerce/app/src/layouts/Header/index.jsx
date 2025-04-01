@@ -10,28 +10,6 @@ import avatar from "assets/imgs/avatar.jpg";
 import styles from "./styles.module.scss";
 
 export default function Header() {
-  // useEffect(() => {
-  //   const f = async () => {
-  //     const promise = new Promise((resolve) => {
-  //       setTimeout(() => {
-  //         resolve("456");
-  //       }, 3000);
-  //     });
-
-  //     console.log("123");
-
-  //     setTimeout(() => {
-  //       console.log("789");
-  //     }, 3000);
-
-  //     const result = await promise;
-
-  //     console.log("result: ", result);
-  //   };
-
-  //   f();
-  // }, []);
-
   return (
     <div className={styles.header}>
       <div className={styles.header__content}>
