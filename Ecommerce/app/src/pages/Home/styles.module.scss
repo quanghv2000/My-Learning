@@ -1,7 +1,56 @@
 .home_page {
+  height: 1000px;
+
+  .slideshow,
+  .browse_ctg {
+    margin-top: 40px;
+  }
+
   .slideshow {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0%;
+  }
+
+  .ctg_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 26px;
+    background: var(--bg-ctg-item);
+    border-radius: 16px;
+    cursor: pointer;
+
+    &__thumb {
+      width: 116px;
+      height: 116px;
+      object-fit: contain;
+      background: var(--bg-ctg-item-thumb);
+      border-radius: 16px;
+    }
+
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 32px;
+      letter-spacing: 0%;
+      color: var(--text-color);
+    }
+
+    &__desc {
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      color: var(--text-color);
+    }
   }
 }
