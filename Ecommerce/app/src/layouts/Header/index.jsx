@@ -10,6 +10,14 @@ import avatar from "assets/imgs/avatar.jpg";
 import styles from "./styles.module.scss";
 
 export default function Header() {
+  const changeTheme = () => {
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+    } else {
+      document.documentElement.classList.add("dark");
+    }
+  };
+
   return (
     <div className={styles.header}>
       <div className={styles.header__content}>
@@ -18,7 +26,7 @@ export default function Header() {
           <img src={moreIcon} alt="" />
         </div>
         {/* Logo */}
-        <div className={styles.logo}>
+        <div className={styles.logo} onClick={changeTheme}>
           <img src={logoIcon} alt="" className={styles.logo__img} />
           <h1 className={styles.logo__title}>App Logo</h1>
         </div>

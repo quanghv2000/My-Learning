@@ -31,6 +31,7 @@
 .logo {
   @include flexItemsCenter;
   gap: 14px;
+  cursor: pointer;
 
   &__title {
     font-weight: 700;
