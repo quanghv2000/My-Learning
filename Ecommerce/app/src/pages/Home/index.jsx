@@ -72,9 +72,22 @@ export default function HomePage() {
           </button>
         </div>
         <div className="row g-4">
-          {[product1, product2, product3, product4].map((item) => {
+          {[
+            product1,
+            product2,
+            product3,
+            product4,
+            product1,
+            product2,
+            product3,
+            product4,
+            product1,
+            product2,
+            product3,
+            product4,
+          ].map((item) => {
             return (
-              <div className={`col col-3`}>
+              <div className={`col col-12 col-sm-6 col-lg-4 col-xl-3`}>
                 <article className={styles.card}>
                   <div className={styles.card__img__wrapper}>
                     <a href="#!">
