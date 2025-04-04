@@ -1,8 +1,6 @@
 @use "scss/abstracts" as *;
 
 .home_page {
-  height: 3000px;
-
   .slideshow,
   .browse_ctg {
     margin-top: 40px;
@@ -56,6 +54,10 @@
       color: var(--text-color);
 
       /** Responsive */
+      @include screen(tablet) {
+        font-size: 20px;
+      }
+
       @include screen(mobile) {
         font-size: 18px;
       }
@@ -70,7 +72,7 @@
       color: var(--text-color);
 
       /** Responsive */
-      @include screen(mobile) {
+      @include screen(tablet) {
         font-size: 14px;
       }
     }
@@ -114,9 +116,15 @@
     }
 
     .card {
-      background: #fff;
+      background: var(--primary-bg-color);
       border-radius: 16px;
       padding: 16px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
 
       &__img__wrapper {
         position: relative;
@@ -136,7 +144,8 @@
           height: 50px;
           border-radius: 50%;
           background: #fff;
-          box-shadow: 0px 20px 60px 20px #7c7c7c33;
+          // box-shadow: 0px 20px 60px 20px #7c7c7c33;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
       }
 
@@ -154,10 +163,27 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+          margin-top: 16px;
+
+          .price {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+          }
 
           .rate {
             display: flex;
             align-items: center;
+            gap: 8px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0%;
+
+            span {
+              margin-top: 2px;
+            }
           }
         }
       }

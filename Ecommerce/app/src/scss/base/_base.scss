@@ -55,3 +55,8 @@ img {
 .icon {
   filter: var(--icon-color);
 }
+
+.g-5 {
+  --bs-gutter-x: 24px;
+  --bs-gutter-y: 24px;
+}

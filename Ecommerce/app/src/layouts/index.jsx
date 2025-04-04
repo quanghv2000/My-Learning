@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 export default function AppLayout({ children }) {
   return (
@@ -14,7 +14,9 @@ export default function AppLayout({ children }) {
       <main>{children}</main>
 
       {/* Footer */}
-      <footer>{/* <Footer /> */}</footer>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

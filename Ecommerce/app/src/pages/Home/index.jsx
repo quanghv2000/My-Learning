@@ -42,7 +42,7 @@ export default function HomePage() {
       {/* Browse Categories */}
       <section className={styles.browse_ctg}>
         <h2 className={styles.heading_title}>Browse Categories</h2>
-        <div className="row g-4 g-lg-5">
+        <div className="row g-5">
           {browseCtgs.map((item) => {
             return (
               <div className="col col-12 col-md-4">
@@ -71,7 +71,7 @@ export default function HomePage() {
             Filter <img src={filterIcon} alt="" />
           </button>
         </div>
-        <div className="row g-4">
+        <div className="row g-5">
           {[
             product1,
             product2,
